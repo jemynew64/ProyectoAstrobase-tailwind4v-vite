@@ -1,0 +1,117 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Mi Portafolio - Astro + Tailwind CSS v4</title>
+	</head>
+	<body class="bg-gray-50 dark:bg-gray-900">
+		<main class="container mx-auto px-4 py-16">
+			<div class="max-w-4xl mx-auto space-y-12">
+				<!-- Hero Section -->
+				<div class="text-center">
+					<h1 class="text-5xl font-bold text-gray-900 dark:text-white mb-4">
+						¡Bienvenido a Astro + Tailwind CSS v4!
+					</h1>
+					<p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+						Tu proyecto está configurado y listo para empezar.
+					</p>
+				</div>
+
+				<!-- Feature Cards -->
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+						<h2 class="text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-2">
+							⚡ Astro
+						</h2>
+						<p class="text-gray-700 dark:text-gray-300">
+							Framework moderno y rápido
+						</p>
+					</div>
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+						<h2 class="text-2xl font-semibold text-purple-600 dark:text-purple-400 mb-2">
+							🎨 Tailwind v4
+						</h2>
+						<p class="text-gray-700 dark:text-gray-300">
+							CSS utility-first de última generación
+						</p>
+					</div>
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+						<h2 class="text-2xl font-semibold text-green-600 dark:text-green-400 mb-2">
+							📝 Typography
+						</h2>
+						<p class="text-gray-700 dark:text-gray-300">
+							Plugin de tipografía oficial
+						</p>
+					</div>
+				</div>
+
+				<!-- Typography Demo -->
+				<article class="prose prose-lg dark:prose-invert mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+					<h2>Ejemplo de Typography Plugin</h2>
+					<p>
+						El plugin <code>@tailwindcss/typography</code> proporciona clases de tipografía hermosas 
+						que puedes usar para estilizar contenido HTML renderizado desde Markdown o extraído de un CMS.
+					</p>
+					<h3>Características principales</h3>
+					<ul>
+						<li>Estilos tipográficos optimizados profesionalmente</li>
+						<li>Soporte para modo oscuro con <code>prose-invert</code></li>
+						<li>Múltiples escalas de tamaño (sm, base, lg, xl, 2xl)</li>
+						<li>Modificadores de elementos para personalización fina</li>
+					</ul>
+					<blockquote>
+						<p>
+							"La simplicidad es la máxima sofisticación." - Leonardo da Vinci
+						</p>
+					</blockquote>
+					<h3>Ejemplo de código</h3>
+					<pre><code>&lt;article class="prose lg:prose-xl"&gt;
+  &lt;h1&gt;Mi Artículo&lt;/h1&gt;
+  &lt;p&gt;Contenido con estilos hermosos...&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+					<p>
+						Con las clases <code>prose</code>, obtienes tipografía hermosa sin necesidad de escribir CSS personalizado.
+						Simplemente envuelve tu contenido y disfruta de estilos profesionales automáticamente.
+					</p>
+				</article>
+
+				<!-- Typography Size Examples -->
+				<div class="space-y-8">
+					<h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center">
+						Ejemplos de Escalas de Tamaño
+					</h2>
+					
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+						<p class="text-sm text-gray-500 dark:text-gray-400 mb-2">prose-sm</p>
+						<article class="prose prose-sm dark:prose-invert">
+							<h3>Tamaño Small</h3>
+							<p>Este es un ejemplo de contenido con la clase <code>prose-sm</code>. Ideal para sidebars o contenido complementario.</p>
+						</article>
+					</div>
+
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+						<p class="text-sm text-gray-500 dark:text-gray-400 mb-2">prose-base (por defecto)</p>
+						<article class="prose dark:prose-invert">
+							<h3>Tamaño Base</h3>
+							<p>Este es el tamaño por defecto. Perfecto para la mayoría del contenido del cuerpo principal.</p>
+						</article>
+					</div>
+
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+						<p class="text-sm text-gray-500 dark:text-gray-400 mb-2">prose-xl</p>
+						<article class="prose prose-xl dark:prose-invert">
+							<h3>Tamaño Extra Large</h3>
+							<p>Contenido más grande y llamativo, ideal para artículos destacados o páginas de landing.</p>
+						</article>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
